@@ -27,9 +27,9 @@ function mergeSortedArrays(A, B, p, q) {
 
 // the function to get the median from the two arrays
 function getMedian(A, B) {
-  let totalLength = A.length() + B.length();
+  let totalLength = A.length + B.length;
 
-  let mergedArray = mergeSortedArrays(A, B, A.length(), B.length());
+  let mergedArray = mergeSortedArrays(A, B, A.length, B.length);
   let median;
   if (totalLength % 2 == 0) {
     median =
