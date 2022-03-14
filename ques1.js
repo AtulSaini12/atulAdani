@@ -1,7 +1,7 @@
 //compare function to sort the array with respect to count
 
 function compareWithRespectToCount(firstEle, secondEle) {
-  return firstEle.count > secondEle.count;
+  return secondEle.count - firstEle.count;
 }
 
 //function to get all stake holders for different stocks
@@ -32,8 +32,8 @@ function getStakeHolders(portfolio) {
     }
   }
 
-  stakeHolders = stakeHolders.sort(compareWithRespectToCount);
-  return stakeHolders;
+  return stakeHolders.sort(compareWithRespectToCount);
+  //   return stakeHolders;
 }
 
 console.log(
